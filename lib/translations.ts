@@ -56,6 +56,28 @@ export const translations = {
         },
       ],
     },
+    portfolio: {
+      title: "Notre Portfolio",
+      subtitle: "Découvrez nos réalisations",
+      all: "Tous",
+      web: "Web",
+      mobile: "Mobile",
+      design: "Design",
+      view_project: "Voir le projet",
+
+      projects: [
+        {
+          title: "Entreprise de Construction",
+          description:
+            "Suprême Construction est une entreprise de la RDC spécialisée dans les études et la construction. Elle se distingue par son professionnalisme, son engagement social et environnemental, ainsi que son approche centrée sur le client.",
+        },
+        {
+          title: "Services PicApic",
+          description:
+            "Site vitrine dédié à la présentation des services proposés par PicApic. Il met en avant le savoir-faire de l'équipe à travers un design moderne, des animations interactives et une navigation fluide.",
+        },
+      ],
+    },
     services: {
       title: "Nos Services",
       subtitle: "Des solutions complètes pour tous vos besoins digitaux",
@@ -75,15 +97,6 @@ export const translations = {
         title: "Maintenance & Optimisation",
         description: "Support technique et optimisation continue de vos projets",
       },
-    },
-    portfolio: {
-      title: "Notre Portfolio",
-      subtitle: "Découvrez nos réalisations",
-      all: "Tous",
-      web: "Web",
-      mobile: "Mobile",
-      design: "Design",
-      view_project: "Voir le projet",
     },
     contact: {
       title: "Contactez-nous",
@@ -164,6 +177,28 @@ export const translations = {
         },
       ],
     },
+    portfolio: {
+      title: "Our Portfolio",
+      subtitle: "Discover our achievements",
+      all: "All",
+      web: "Web",
+      mobile: "Mobile",
+      design: "Design",
+      view_project: "View project",
+
+      projects: [
+        {
+          title: "Construction Company",
+          description:
+            "Supreme Construction is a DRC-based company specializing in studies and construction. It stands out for its professionalism, social and environmental commitment, and client-centered approach.",
+        },
+        {
+          title: "PicApic Services",
+          description:
+            "Showcase site dedicated to presenting the services offered by PicApic. It highlights the team's expertise through modern design, interactive animations, and smooth navigation.",
+        },
+      ],
+    },
     services: {
       title: "Our Services",
       subtitle: "Complete solutions for all your digital needs",
@@ -183,15 +218,6 @@ export const translations = {
         title: "Maintenance & Optimization",
         description: "Technical support and continuous optimization of your projects",
       },
-    },
-    portfolio: {
-      title: "Our Portfolio",
-      subtitle: "Discover our achievements",
-      all: "All",
-      web: "Web",
-      mobile: "Mobile",
-      design: "Design",
-      view_project: "View project",
     },
     contact: {
       title: "Contact us",

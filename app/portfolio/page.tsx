@@ -23,55 +23,18 @@ export default function PortfolioPage() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-commerce Fashion",
-      description:
-        "Plateforme e-commerce moderne avec paiement intégré et gestion des stocks. Interface utilisateur intuitive avec panier d'achat avancé et système de recommandations.",
-      image: "/images/kl.jpg",
-      link: "https://example.com",
+      title: t("portfolio.projects.0.title"),
+      description: t("portfolio.projects.0.description"),
+      image: "/images/cap1.png",
+      link: "https://supremeconstruction.click/",
       category: "web",
     },
     {
       id: 2,
-      title: "App Mobile Banking",
-      description:
-        "Application mobile de banque avec authentification biométrique, virements instantanés et gestion de budget personnalisé.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "https://example.com",
-      category: "mobile",
-    },
-    {
-      id: 3,
-      title: "Dashboard Analytics",
-      description:
-        "Interface d'administration avec graphiques et analytics en temps réel. Tableaux de bord personnalisables et exports de données.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "https://example.com",
-      category: "web",
-    },
-    {
-      id: 4,
-      title: "App Fitness Tracker",
-      description:
-        "Application de suivi fitness avec géolocalisation, coaching personnalisé et communauté d'utilisateurs.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "https://example.com",
-      category: "mobile",
-    },
-    {
-      id: 5,
-      title: "Brand Identity Design",
-      description:
-        "Création d'identité visuelle complète avec logo, charte graphique et déclinaisons print et digital.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "https://example.com",
-      category: "design",
-    },
-    {
-      id: 6,
-      title: "Restaurant Website",
-      description: "Site vitrine pour restaurant avec réservation en ligne, menu interactif et galerie photos.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "https://example.com",
+      title: t("portfolio.projects.1.title"),
+      description: t("portfolio.projects.1.description"),
+      image: "/images/cap2.png",
+      link: "https://picapic.top",
       category: "web",
     },
   ]
@@ -88,7 +51,7 @@ export default function PortfolioPage() {
 
   return (
     <div className="bg-gray-900 min-h-screen">
-      {/* Hero Section */}
+      {}
       <section className="py-20 bg-gradient-to-br from-gray-900 to-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -103,7 +66,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* Filter Section */}
+      {}
       <section className="py-12 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -174,8 +137,8 @@ export default function PortfolioPage() {
                           project.category === "web"
                             ? "bg-blue-500/20 text-blue-400"
                             : project.category === "mobile"
-                              ? "bg-purple-500/20 text-purple-400"
-                              : "bg-pink-500/20 text-pink-400"
+                            ? "bg-purple-500/20 text-purple-400"
+                            : "bg-pink-500/20 text-pink-400"
                         }`}
                       >
                         {project.category}
@@ -189,7 +152,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* Project Modal */}
+      {}
       <AnimatePresence>
         {selectedProject && (
           <motion.div
@@ -230,8 +193,8 @@ export default function PortfolioPage() {
                       selectedProject.category === "web"
                         ? "bg-blue-500/20 text-blue-400"
                         : selectedProject.category === "mobile"
-                          ? "bg-purple-500/20 text-purple-400"
-                          : "bg-pink-500/20 text-pink-400"
+                        ? "bg-purple-500/20 text-purple-400"
+                        : "bg-pink-500/20 text-pink-400"
                     }`}
                   >
                     {selectedProject.category}
@@ -241,7 +204,7 @@ export default function PortfolioPage() {
                     onClick={() => window.open(selectedProject.link, "_blank")}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    Voir le projet
+                    {t("portfolio.view_project")}
                   </Button>
                 </div>
               </div>

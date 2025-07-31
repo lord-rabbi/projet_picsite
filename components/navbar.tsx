@@ -19,7 +19,7 @@ export default function Navbar() {
     { href: "/services", label: t("nav.services") },
     { href: "/portfolio", label: t("nav.portfolio") },
     { href: "/contact", label: t("nav.contact") },
-    { href: "/admin", label: t("nav.admin") },
+   
   ]
 
   return (
